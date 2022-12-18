@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>HTML, CSS &amp; Git Basics</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./assets/img/png-avatar.png" />
+    <title>cv</title>
   </head>
   <body>
-    <h1>Stub file for Auto-Test</h1>
-    <img src="./avatar.jpg" alt="Avatar">
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#summary" class="nav-link">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="section" id="contacts">
+          <h1 class="section-title">Vadim Tissen</h1>
+        </section>
+        <section class="section" id="summary">
+          <h2 class="section-title">...</h2>
+        </section>
+        <section class="section" id="skills">
+          <h2 class="section-title">...</h2>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-item">
+          <a href="https://github.com/vts3rss" class="github">
+            <img
+              class="footer-img"
+              src="/assets/img/github-logo.svg"
+              alt=""
+              srcset=""
+            /><span>GitHub</span>
+          </a>
+        </div>
+
+        <div class="footer-item">2022</div>
+        <div class="footer-item">
+          <a href="https://rs.school/js/"
+            ><img
+              class="footer-img"
+              src="/assets/img/rs_school_js.svg"
+              alt=""
+              srcset=""
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
