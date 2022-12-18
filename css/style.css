@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto Light", sans-serif;
   min-height: 100vh;
@@ -9,31 +13,92 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 25px;
   /* justify-content: space-between; */
 }
 
-* {
-  box-sizing: border-box;
+.code {
+  font-family: monospace;
+  margin-left: 10px;
+  margin: 5px;
+  padding: 10px;
+  white-space: pre-wrap;
+  /* border: 1px black solid; */
 }
 
+.name {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.section p,
+.section ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.nav-list {
+.header-container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
+}
+
+.header-container .nav-list {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  justify-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 5px;
+  margin: 0;
+  gap: 15px;
   padding: 0;
 }
 
+#skills ul {
+  font-size: 25px;
+}
+
+.section-title {
+  font-weight: normal;
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.section {
+  padding: 10px;
+  width: calc((100% - 10px) / 2);
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
 .nav-link {
-  display: inline-block;
+  justify-items: center;
+  display: block;
   transition: 0.3s;
 }
 
@@ -52,21 +117,37 @@ body a:hover {
 
 .header-container {
   border-bottom: 1px black solid;
-  padding-left: 10px;
-  padding-right: 10px;
+}
+
+.main {
+  flex: 1;
 }
 
 .footer-container {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-top: 1px black solid;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  justify-items: center;
 }
+
+#about > p {
+  padding-left: 20px;
+}
+
+.avatar-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  object-position: center center;
+  border: 1px black solid;
+  border-radius: 50%;
+}
+
 .github {
   display: flex;
   gap: 8px;
